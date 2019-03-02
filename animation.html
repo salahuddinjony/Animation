@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+<style>
+	.animation-1{
+		width: 200px;
+		height: 200px;
+		position: relative;
+		background-color: red;
+		animation-duration: 4s;
+		animation-name: box1;
+		animation-iteration-count: infinite;
+		margin-bottom: 50px;
+
+	}
+	.animation-2{
+		width: 200px;
+		height:200px;
+		position: relative;
+		background-color: red;
+		animation-duration: 4s;
+		animation-name: box2;
+		float: right;
+		animation-iteration-count: infinite;
+
+	}
+@-webkit-keyframes box1{
+	0%{background-color: red;top:0px; left:0px;}
+	25%{background-color: yellow; left:700px;top:0px;}
+	50%{background-color: green; left:650px; top:100px;}
+	75%{background-color: blue; left:0px; top:100px;}
+	100%{background-color: black; left:0px; top:0px;}
+}
+@-webkit-keyframes box2{
+	0%{background-color: #2ecc71;top:0px; left:0px;}
+	25%{background-color: #2980b9; left:-700px;top:0px;}
+	50%{background-color: #e67e22; left:-500px; top:100px;}
+	75%{background-color: #8e44ad; left:0px; top:100px;}
+	100%{background-color: #74b9ff; left:0px; top:-250px;}
+}
+</style>
+
+</head>
+<body>
+<div class="animation-1"></div>
+<div class="animation-2"></div>
+
+</body>
+</html>
